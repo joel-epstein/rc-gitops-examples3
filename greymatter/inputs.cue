@@ -16,7 +16,7 @@ defaults: {
 
 	ports: {
 		default_ingress: 10808
-		edge_ingress:    10809
+		edge_ingress:    10812
 		redis_ingress:   10910
 		metrics:         8081
 	}
@@ -25,7 +25,7 @@ defaults: {
 	// These configs will manipulate the behavior of accessing your services
 	// from the outside world.
 	edge: {
-		key:        "edge_grocerylist1"
+		key:        "edge_grocerylist4"
 		
 		enable_tls: false
 
@@ -37,7 +37,7 @@ defaults: {
 		// - different environments/infra may require different config.
 		// This can be retrieved on kubernetes by running:
 		// kubectl get svc edge-grocerylist -n $MY_NAMESPACE
-		endpoint: "a49b9d0afc56441718737bce1b58af68-504379397.us-east-1.elb.amazonaws.com:10809"
+		endpoint: "a0974bf2d00494301ae5179c8dc59179-882855933.us-east-1.elb.amazonaws.com:10812"
 		
 		// OIDC block
 		oidc: {
@@ -70,7 +70,7 @@ defaults: {
 			}
 		}
 	}
-	spire: {
+		spire: {
 		// Namespace of the Spire server
 		namespace: "spire"
 		// Trust domain must match what's configured at the server
@@ -82,5 +82,4 @@ defaults: {
 		// should we request a host mount for the socket, or normal volume mount? If true, also requests hostPID permission
 		host_mount_socket: true
 	}
-
 }

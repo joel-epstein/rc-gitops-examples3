@@ -9,10 +9,10 @@
 for i in {1..150}
 do
 #echo "kiwi${i}"
-greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=9090 --package=grocerylist "kiwi-${i}"
-#~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "peach-${i}"
-#~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "orange-${i}"
-#~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "fig-${i}"
-#~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "grape-${i}"
+#~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "kiwi${i}"
+#~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "peach${i}"
+#~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "orange${i}"
+greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=9090 --package=grocerylist "fig-${i}"
+#~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "grape${i}"
 done
 
