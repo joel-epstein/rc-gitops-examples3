@@ -2,33 +2,33 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: foobar-1
+  name: foobar-10
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: edge-grocerylist
-  namespace: foobar-1
+  name: edge-grocerylist10
+  namespace: foobar-10
 spec:
   replicas: 1
   selector:
     matchLabels:
-      greymatter.io/cluster: edge_grocerylist
+      greymatter.io/cluster: edge_grocerylist10
   template:
     metadata:
       labels:
-        greymatter.io/cluster: edge_grocerylist
+        greymatter.io/cluster: edge_grocerylist10
     spec:
       containers:
         - name: sidecar
           image: quay.io/greymatterio/gm-proxy:1.7.1
           imagePullPolicy: Always
           ports:
-          - containerPort: 10809
+          - containerPort: 10818
             name: proxy
           env:
             - name: XDS_CLUSTER
-              value: edge_grocerylist
+              value: edge_grocerylist10
             - name: ENVOY_ADMIN_LOG_PATH
               value: /dev/stdout
             - name: PROXY_DYNAMIC
@@ -52,166 +52,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: edge-grocerylist
-  namespace: foobar-1
+  name: edge-grocerylist10
+  namespace: foobar-10
 spec:
   ports:
   - name: ingress
-    port: 10809
+    port: 10818
     protocol: TCP
-    targetPort: 10809
+    targetPort: 10818
   selector:
-    greymatter.io/cluster: edge_grocerylist
+    greymatter.io/cluster: edge_grocerylist10
   type: LoadBalancer
 
----
-apiVersion: v1
-data:
-  index.html: I'm an API in the greymatter.io mesh!
-kind: ConfigMap
-metadata:
-  name: apple-web
-  namespace: foobar-1
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: apple
-  namespace: foobar-1
-  annotations:
-    greymatter.io/inject-sidecar-to: "8080"
-spec:
-  selector:
-    matchLabels:
-      app: apple
-  template:
-    metadata:
-      labels:
-        app: apple
-    spec:
-      containers:
-        - name: apple
-          image: python:3
-          command: ["python"]
-          args: ["-m", "http.server", "8080", "--directory", "web"]
-          volumeMounts:
-            - name: web-volume
-              mountPath: /web
-      volumes:
-        - name: web-volume
-          configMap:
-            name: apple-web
-
----
-apiVersion: v1
-data:
-  index.html: I'm an API in the greymatter.io mesh!
-kind: ConfigMap
-metadata:
-  name: banana-web
-  namespace: foobar-1
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: banana
-  namespace: foobar-1
-  annotations:
-    greymatter.io/inject-sidecar-to: "8080"
-spec:
-  selector:
-    matchLabels:
-      app: banana
-  template:
-    metadata:
-      labels:
-        app: banana
-    spec:
-      containers:
-        - name: banana
-          image: python:3
-          command: ["python"]
-          args: ["-m", "http.server", "8080", "--directory", "web"]
-          volumeMounts:
-            - name: web-volume
-              mountPath: /web
-      volumes:
-        - name: web-volume
-          configMap:
-            name: banana-web
-
----
-apiVersion: v1
-data:
-  index.html: I'm an API in the greymatter.io mesh!
-kind: ConfigMap
-metadata:
-  name: lettuce-web
-  namespace: foobar-1
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: lettuce
-  namespace: foobar-1
-  annotations:
-    greymatter.io/inject-sidecar-to: "8080"
-spec:
-  selector:
-    matchLabels:
-      app: lettuce
-  template:
-    metadata:
-      labels:
-        app: lettuce
-    spec:
-      containers:
-        - name: lettuce
-          image: python:3
-          command: ["python"]
-          args: ["-m", "http.server", "8080", "--directory", "web"]
-          volumeMounts:
-            - name: web-volume
-              mountPath: /web
-      volumes:
-        - name: web-volume
-          configMap:
-            name: lettuce-web
-
----
-apiVersion: v1
-data:
-  index.html: I'm an API in the greymatter.io mesh!
-kind: ConfigMap
-metadata:
-  name: tomato-web
-  namespace: foobar-1
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: tomato
-  namespace: foobar-1
-  annotations:
-    greymatter.io/inject-sidecar-to: "8080"
-spec:
-  selector:
-    matchLabels:
-      app: tomato
-  template:
-    metadata:
-      labels:
-        app: tomato
-    spec:
-      containers:
-        - name: tomato
-          image: python:3
-          command: ["python"]
-          args: ["-m", "http.server", "8080", "--directory", "web"]
-          volumeMounts:
-            - name: web-volume
-              mountPath: /web
-      volumes:
-        - name: web-volume
-          configMap:
-            name: tomato-web

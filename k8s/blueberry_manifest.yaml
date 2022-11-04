@@ -1,0 +1,3600 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-1
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-1
+  template:
+    metadata:
+      labels:
+        app: blueberry-1
+    spec:
+      containers:
+        - name: blueberry-1
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-2
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-2
+  template:
+    metadata:
+      labels:
+        app: blueberry-2
+    spec:
+      containers:
+        - name: blueberry-2
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-3
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-3
+  template:
+    metadata:
+      labels:
+        app: blueberry-3
+    spec:
+      containers:
+        - name: blueberry-3
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-4
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-4
+  template:
+    metadata:
+      labels:
+        app: blueberry-4
+    spec:
+      containers:
+        - name: blueberry-4
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-5
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-5
+  template:
+    metadata:
+      labels:
+        app: blueberry-5
+    spec:
+      containers:
+        - name: blueberry-5
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-6
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-6
+  template:
+    metadata:
+      labels:
+        app: blueberry-6
+    spec:
+      containers:
+        - name: blueberry-6
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-7
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-7
+  template:
+    metadata:
+      labels:
+        app: blueberry-7
+    spec:
+      containers:
+        - name: blueberry-7
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-8
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-8
+  template:
+    metadata:
+      labels:
+        app: blueberry-8
+    spec:
+      containers:
+        - name: blueberry-8
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-9
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-9
+  template:
+    metadata:
+      labels:
+        app: blueberry-9
+    spec:
+      containers:
+        - name: blueberry-9
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-10
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-10
+  template:
+    metadata:
+      labels:
+        app: blueberry-10
+    spec:
+      containers:
+        - name: blueberry-10
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-11
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-11
+  template:
+    metadata:
+      labels:
+        app: blueberry-11
+    spec:
+      containers:
+        - name: blueberry-11
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-12
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-12
+  template:
+    metadata:
+      labels:
+        app: blueberry-12
+    spec:
+      containers:
+        - name: blueberry-12
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-13
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-13
+  template:
+    metadata:
+      labels:
+        app: blueberry-13
+    spec:
+      containers:
+        - name: blueberry-13
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-14
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-14
+  template:
+    metadata:
+      labels:
+        app: blueberry-14
+    spec:
+      containers:
+        - name: blueberry-14
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-15
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-15
+  template:
+    metadata:
+      labels:
+        app: blueberry-15
+    spec:
+      containers:
+        - name: blueberry-15
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-16
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-16
+  template:
+    metadata:
+      labels:
+        app: blueberry-16
+    spec:
+      containers:
+        - name: blueberry-16
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-17
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-17
+  template:
+    metadata:
+      labels:
+        app: blueberry-17
+    spec:
+      containers:
+        - name: blueberry-17
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-18
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-18
+  template:
+    metadata:
+      labels:
+        app: blueberry-18
+    spec:
+      containers:
+        - name: blueberry-18
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-19
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-19
+  template:
+    metadata:
+      labels:
+        app: blueberry-19
+    spec:
+      containers:
+        - name: blueberry-19
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-20
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-20
+  template:
+    metadata:
+      labels:
+        app: blueberry-20
+    spec:
+      containers:
+        - name: blueberry-20
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-21
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-21
+  template:
+    metadata:
+      labels:
+        app: blueberry-21
+    spec:
+      containers:
+        - name: blueberry-21
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-22
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-22
+  template:
+    metadata:
+      labels:
+        app: blueberry-22
+    spec:
+      containers:
+        - name: blueberry-22
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-23
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-23
+  template:
+    metadata:
+      labels:
+        app: blueberry-23
+    spec:
+      containers:
+        - name: blueberry-23
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-24
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-24
+  template:
+    metadata:
+      labels:
+        app: blueberry-24
+    spec:
+      containers:
+        - name: blueberry-24
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-25
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-25
+  template:
+    metadata:
+      labels:
+        app: blueberry-25
+    spec:
+      containers:
+        - name: blueberry-25
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-26
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-26
+  template:
+    metadata:
+      labels:
+        app: blueberry-26
+    spec:
+      containers:
+        - name: blueberry-26
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-27
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-27
+  template:
+    metadata:
+      labels:
+        app: blueberry-27
+    spec:
+      containers:
+        - name: blueberry-27
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-28
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-28
+  template:
+    metadata:
+      labels:
+        app: blueberry-28
+    spec:
+      containers:
+        - name: blueberry-28
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-29
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-29
+  template:
+    metadata:
+      labels:
+        app: blueberry-29
+    spec:
+      containers:
+        - name: blueberry-29
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-30
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-30
+  template:
+    metadata:
+      labels:
+        app: blueberry-30
+    spec:
+      containers:
+        - name: blueberry-30
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-31
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-31
+  template:
+    metadata:
+      labels:
+        app: blueberry-31
+    spec:
+      containers:
+        - name: blueberry-31
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-32
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-32
+  template:
+    metadata:
+      labels:
+        app: blueberry-32
+    spec:
+      containers:
+        - name: blueberry-32
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-33
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-33
+  template:
+    metadata:
+      labels:
+        app: blueberry-33
+    spec:
+      containers:
+        - name: blueberry-33
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-34
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-34
+  template:
+    metadata:
+      labels:
+        app: blueberry-34
+    spec:
+      containers:
+        - name: blueberry-34
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-35
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-35
+  template:
+    metadata:
+      labels:
+        app: blueberry-35
+    spec:
+      containers:
+        - name: blueberry-35
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-36
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-36
+  template:
+    metadata:
+      labels:
+        app: blueberry-36
+    spec:
+      containers:
+        - name: blueberry-36
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-37
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-37
+  template:
+    metadata:
+      labels:
+        app: blueberry-37
+    spec:
+      containers:
+        - name: blueberry-37
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-38
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-38
+  template:
+    metadata:
+      labels:
+        app: blueberry-38
+    spec:
+      containers:
+        - name: blueberry-38
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-39
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-39
+  template:
+    metadata:
+      labels:
+        app: blueberry-39
+    spec:
+      containers:
+        - name: blueberry-39
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-40
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-40
+  template:
+    metadata:
+      labels:
+        app: blueberry-40
+    spec:
+      containers:
+        - name: blueberry-40
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-41
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-41
+  template:
+    metadata:
+      labels:
+        app: blueberry-41
+    spec:
+      containers:
+        - name: blueberry-41
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-42
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-42
+  template:
+    metadata:
+      labels:
+        app: blueberry-42
+    spec:
+      containers:
+        - name: blueberry-42
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-43
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-43
+  template:
+    metadata:
+      labels:
+        app: blueberry-43
+    spec:
+      containers:
+        - name: blueberry-43
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-44
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-44
+  template:
+    metadata:
+      labels:
+        app: blueberry-44
+    spec:
+      containers:
+        - name: blueberry-44
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-45
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-45
+  template:
+    metadata:
+      labels:
+        app: blueberry-45
+    spec:
+      containers:
+        - name: blueberry-45
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-46
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-46
+  template:
+    metadata:
+      labels:
+        app: blueberry-46
+    spec:
+      containers:
+        - name: blueberry-46
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-47
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-47
+  template:
+    metadata:
+      labels:
+        app: blueberry-47
+    spec:
+      containers:
+        - name: blueberry-47
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-48
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-48
+  template:
+    metadata:
+      labels:
+        app: blueberry-48
+    spec:
+      containers:
+        - name: blueberry-48
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-49
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-49
+  template:
+    metadata:
+      labels:
+        app: blueberry-49
+    spec:
+      containers:
+        - name: blueberry-49
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-50
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-50
+  template:
+    metadata:
+      labels:
+        app: blueberry-50
+    spec:
+      containers:
+        - name: blueberry-50
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-51
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-51
+  template:
+    metadata:
+      labels:
+        app: blueberry-51
+    spec:
+      containers:
+        - name: blueberry-51
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-52
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-52
+  template:
+    metadata:
+      labels:
+        app: blueberry-52
+    spec:
+      containers:
+        - name: blueberry-52
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-53
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-53
+  template:
+    metadata:
+      labels:
+        app: blueberry-53
+    spec:
+      containers:
+        - name: blueberry-53
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-54
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-54
+  template:
+    metadata:
+      labels:
+        app: blueberry-54
+    spec:
+      containers:
+        - name: blueberry-54
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-55
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-55
+  template:
+    metadata:
+      labels:
+        app: blueberry-55
+    spec:
+      containers:
+        - name: blueberry-55
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-56
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-56
+  template:
+    metadata:
+      labels:
+        app: blueberry-56
+    spec:
+      containers:
+        - name: blueberry-56
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-57
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-57
+  template:
+    metadata:
+      labels:
+        app: blueberry-57
+    spec:
+      containers:
+        - name: blueberry-57
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-58
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-58
+  template:
+    metadata:
+      labels:
+        app: blueberry-58
+    spec:
+      containers:
+        - name: blueberry-58
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-59
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-59
+  template:
+    metadata:
+      labels:
+        app: blueberry-59
+    spec:
+      containers:
+        - name: blueberry-59
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-60
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-60
+  template:
+    metadata:
+      labels:
+        app: blueberry-60
+    spec:
+      containers:
+        - name: blueberry-60
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-61
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-61
+  template:
+    metadata:
+      labels:
+        app: blueberry-61
+    spec:
+      containers:
+        - name: blueberry-61
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-62
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-62
+  template:
+    metadata:
+      labels:
+        app: blueberry-62
+    spec:
+      containers:
+        - name: blueberry-62
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-63
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-63
+  template:
+    metadata:
+      labels:
+        app: blueberry-63
+    spec:
+      containers:
+        - name: blueberry-63
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-64
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-64
+  template:
+    metadata:
+      labels:
+        app: blueberry-64
+    spec:
+      containers:
+        - name: blueberry-64
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-65
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-65
+  template:
+    metadata:
+      labels:
+        app: blueberry-65
+    spec:
+      containers:
+        - name: blueberry-65
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-66
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-66
+  template:
+    metadata:
+      labels:
+        app: blueberry-66
+    spec:
+      containers:
+        - name: blueberry-66
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-67
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-67
+  template:
+    metadata:
+      labels:
+        app: blueberry-67
+    spec:
+      containers:
+        - name: blueberry-67
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-68
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-68
+  template:
+    metadata:
+      labels:
+        app: blueberry-68
+    spec:
+      containers:
+        - name: blueberry-68
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-69
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-69
+  template:
+    metadata:
+      labels:
+        app: blueberry-69
+    spec:
+      containers:
+        - name: blueberry-69
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-70
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-70
+  template:
+    metadata:
+      labels:
+        app: blueberry-70
+    spec:
+      containers:
+        - name: blueberry-70
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-71
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-71
+  template:
+    metadata:
+      labels:
+        app: blueberry-71
+    spec:
+      containers:
+        - name: blueberry-71
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-72
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-72
+  template:
+    metadata:
+      labels:
+        app: blueberry-72
+    spec:
+      containers:
+        - name: blueberry-72
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-73
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-73
+  template:
+    metadata:
+      labels:
+        app: blueberry-73
+    spec:
+      containers:
+        - name: blueberry-73
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-74
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-74
+  template:
+    metadata:
+      labels:
+        app: blueberry-74
+    spec:
+      containers:
+        - name: blueberry-74
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-75
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-75
+  template:
+    metadata:
+      labels:
+        app: blueberry-75
+    spec:
+      containers:
+        - name: blueberry-75
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-76
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-76
+  template:
+    metadata:
+      labels:
+        app: blueberry-76
+    spec:
+      containers:
+        - name: blueberry-76
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-77
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-77
+  template:
+    metadata:
+      labels:
+        app: blueberry-77
+    spec:
+      containers:
+        - name: blueberry-77
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-78
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-78
+  template:
+    metadata:
+      labels:
+        app: blueberry-78
+    spec:
+      containers:
+        - name: blueberry-78
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-79
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-79
+  template:
+    metadata:
+      labels:
+        app: blueberry-79
+    spec:
+      containers:
+        - name: blueberry-79
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-80
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-80
+  template:
+    metadata:
+      labels:
+        app: blueberry-80
+    spec:
+      containers:
+        - name: blueberry-80
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-81
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-81
+  template:
+    metadata:
+      labels:
+        app: blueberry-81
+    spec:
+      containers:
+        - name: blueberry-81
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-82
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-82
+  template:
+    metadata:
+      labels:
+        app: blueberry-82
+    spec:
+      containers:
+        - name: blueberry-82
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-83
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-83
+  template:
+    metadata:
+      labels:
+        app: blueberry-83
+    spec:
+      containers:
+        - name: blueberry-83
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-84
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-84
+  template:
+    metadata:
+      labels:
+        app: blueberry-84
+    spec:
+      containers:
+        - name: blueberry-84
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-85
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-85
+  template:
+    metadata:
+      labels:
+        app: blueberry-85
+    spec:
+      containers:
+        - name: blueberry-85
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-86
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-86
+  template:
+    metadata:
+      labels:
+        app: blueberry-86
+    spec:
+      containers:
+        - name: blueberry-86
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-87
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-87
+  template:
+    metadata:
+      labels:
+        app: blueberry-87
+    spec:
+      containers:
+        - name: blueberry-87
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-88
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-88
+  template:
+    metadata:
+      labels:
+        app: blueberry-88
+    spec:
+      containers:
+        - name: blueberry-88
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-89
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-89
+  template:
+    metadata:
+      labels:
+        app: blueberry-89
+    spec:
+      containers:
+        - name: blueberry-89
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-90
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-90
+  template:
+    metadata:
+      labels:
+        app: blueberry-90
+    spec:
+      containers:
+        - name: blueberry-90
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-91
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-91
+  template:
+    metadata:
+      labels:
+        app: blueberry-91
+    spec:
+      containers:
+        - name: blueberry-91
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-92
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-92
+  template:
+    metadata:
+      labels:
+        app: blueberry-92
+    spec:
+      containers:
+        - name: blueberry-92
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-93
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-93
+  template:
+    metadata:
+      labels:
+        app: blueberry-93
+    spec:
+      containers:
+        - name: blueberry-93
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-94
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-94
+  template:
+    metadata:
+      labels:
+        app: blueberry-94
+    spec:
+      containers:
+        - name: blueberry-94
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-95
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-95
+  template:
+    metadata:
+      labels:
+        app: blueberry-95
+    spec:
+      containers:
+        - name: blueberry-95
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-96
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-96
+  template:
+    metadata:
+      labels:
+        app: blueberry-96
+    spec:
+      containers:
+        - name: blueberry-96
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-97
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-97
+  template:
+    metadata:
+      labels:
+        app: blueberry-97
+    spec:
+      containers:
+        - name: blueberry-97
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-98
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-98
+  template:
+    metadata:
+      labels:
+        app: blueberry-98
+    spec:
+      containers:
+        - name: blueberry-98
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-99
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-99
+  template:
+    metadata:
+      labels:
+        app: blueberry-99
+    spec:
+      containers:
+        - name: blueberry-99
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-100
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-100
+  template:
+    metadata:
+      labels:
+        app: blueberry-100
+    spec:
+      containers:
+        - name: blueberry-100
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-101
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-101
+  template:
+    metadata:
+      labels:
+        app: blueberry-101
+    spec:
+      containers:
+        - name: blueberry-101
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-102
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-102
+  template:
+    metadata:
+      labels:
+        app: blueberry-102
+    spec:
+      containers:
+        - name: blueberry-102
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-103
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-103
+  template:
+    metadata:
+      labels:
+        app: blueberry-103
+    spec:
+      containers:
+        - name: blueberry-103
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-104
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-104
+  template:
+    metadata:
+      labels:
+        app: blueberry-104
+    spec:
+      containers:
+        - name: blueberry-104
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-105
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-105
+  template:
+    metadata:
+      labels:
+        app: blueberry-105
+    spec:
+      containers:
+        - name: blueberry-105
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-106
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-106
+  template:
+    metadata:
+      labels:
+        app: blueberry-106
+    spec:
+      containers:
+        - name: blueberry-106
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-107
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-107
+  template:
+    metadata:
+      labels:
+        app: blueberry-107
+    spec:
+      containers:
+        - name: blueberry-107
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-108
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-108
+  template:
+    metadata:
+      labels:
+        app: blueberry-108
+    spec:
+      containers:
+        - name: blueberry-108
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-109
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-109
+  template:
+    metadata:
+      labels:
+        app: blueberry-109
+    spec:
+      containers:
+        - name: blueberry-109
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-110
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-110
+  template:
+    metadata:
+      labels:
+        app: blueberry-110
+    spec:
+      containers:
+        - name: blueberry-110
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-111
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-111
+  template:
+    metadata:
+      labels:
+        app: blueberry-111
+    spec:
+      containers:
+        - name: blueberry-111
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-112
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-112
+  template:
+    metadata:
+      labels:
+        app: blueberry-112
+    spec:
+      containers:
+        - name: blueberry-112
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-113
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-113
+  template:
+    metadata:
+      labels:
+        app: blueberry-113
+    spec:
+      containers:
+        - name: blueberry-113
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-114
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-114
+  template:
+    metadata:
+      labels:
+        app: blueberry-114
+    spec:
+      containers:
+        - name: blueberry-114
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-115
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-115
+  template:
+    metadata:
+      labels:
+        app: blueberry-115
+    spec:
+      containers:
+        - name: blueberry-115
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-116
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-116
+  template:
+    metadata:
+      labels:
+        app: blueberry-116
+    spec:
+      containers:
+        - name: blueberry-116
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-117
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-117
+  template:
+    metadata:
+      labels:
+        app: blueberry-117
+    spec:
+      containers:
+        - name: blueberry-117
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-118
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-118
+  template:
+    metadata:
+      labels:
+        app: blueberry-118
+    spec:
+      containers:
+        - name: blueberry-118
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-119
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-119
+  template:
+    metadata:
+      labels:
+        app: blueberry-119
+    spec:
+      containers:
+        - name: blueberry-119
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-120
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-120
+  template:
+    metadata:
+      labels:
+        app: blueberry-120
+    spec:
+      containers:
+        - name: blueberry-120
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-121
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-121
+  template:
+    metadata:
+      labels:
+        app: blueberry-121
+    spec:
+      containers:
+        - name: blueberry-121
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-122
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-122
+  template:
+    metadata:
+      labels:
+        app: blueberry-122
+    spec:
+      containers:
+        - name: blueberry-122
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-123
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-123
+  template:
+    metadata:
+      labels:
+        app: blueberry-123
+    spec:
+      containers:
+        - name: blueberry-123
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-124
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-124
+  template:
+    metadata:
+      labels:
+        app: blueberry-124
+    spec:
+      containers:
+        - name: blueberry-124
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-125
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-125
+  template:
+    metadata:
+      labels:
+        app: blueberry-125
+    spec:
+      containers:
+        - name: blueberry-125
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-126
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-126
+  template:
+    metadata:
+      labels:
+        app: blueberry-126
+    spec:
+      containers:
+        - name: blueberry-126
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-127
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-127
+  template:
+    metadata:
+      labels:
+        app: blueberry-127
+    spec:
+      containers:
+        - name: blueberry-127
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-128
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-128
+  template:
+    metadata:
+      labels:
+        app: blueberry-128
+    spec:
+      containers:
+        - name: blueberry-128
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-129
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-129
+  template:
+    metadata:
+      labels:
+        app: blueberry-129
+    spec:
+      containers:
+        - name: blueberry-129
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-130
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-130
+  template:
+    metadata:
+      labels:
+        app: blueberry-130
+    spec:
+      containers:
+        - name: blueberry-130
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-131
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-131
+  template:
+    metadata:
+      labels:
+        app: blueberry-131
+    spec:
+      containers:
+        - name: blueberry-131
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-132
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-132
+  template:
+    metadata:
+      labels:
+        app: blueberry-132
+    spec:
+      containers:
+        - name: blueberry-132
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-133
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-133
+  template:
+    metadata:
+      labels:
+        app: blueberry-133
+    spec:
+      containers:
+        - name: blueberry-133
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-134
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-134
+  template:
+    metadata:
+      labels:
+        app: blueberry-134
+    spec:
+      containers:
+        - name: blueberry-134
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-135
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-135
+  template:
+    metadata:
+      labels:
+        app: blueberry-135
+    spec:
+      containers:
+        - name: blueberry-135
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-136
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-136
+  template:
+    metadata:
+      labels:
+        app: blueberry-136
+    spec:
+      containers:
+        - name: blueberry-136
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-137
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-137
+  template:
+    metadata:
+      labels:
+        app: blueberry-137
+    spec:
+      containers:
+        - name: blueberry-137
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-138
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-138
+  template:
+    metadata:
+      labels:
+        app: blueberry-138
+    spec:
+      containers:
+        - name: blueberry-138
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-139
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-139
+  template:
+    metadata:
+      labels:
+        app: blueberry-139
+    spec:
+      containers:
+        - name: blueberry-139
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-140
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-140
+  template:
+    metadata:
+      labels:
+        app: blueberry-140
+    spec:
+      containers:
+        - name: blueberry-140
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-141
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-141
+  template:
+    metadata:
+      labels:
+        app: blueberry-141
+    spec:
+      containers:
+        - name: blueberry-141
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-142
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-142
+  template:
+    metadata:
+      labels:
+        app: blueberry-142
+    spec:
+      containers:
+        - name: blueberry-142
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-143
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-143
+  template:
+    metadata:
+      labels:
+        app: blueberry-143
+    spec:
+      containers:
+        - name: blueberry-143
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-144
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-144
+  template:
+    metadata:
+      labels:
+        app: blueberry-144
+    spec:
+      containers:
+        - name: blueberry-144
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-145
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-145
+  template:
+    metadata:
+      labels:
+        app: blueberry-145
+    spec:
+      containers:
+        - name: blueberry-145
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-146
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-146
+  template:
+    metadata:
+      labels:
+        app: blueberry-146
+    spec:
+      containers:
+        - name: blueberry-146
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-147
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-147
+  template:
+    metadata:
+      labels:
+        app: blueberry-147
+    spec:
+      containers:
+        - name: blueberry-147
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-148
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-148
+  template:
+    metadata:
+      labels:
+        app: blueberry-148
+    spec:
+      containers:
+        - name: blueberry-148
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-149
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-149
+  template:
+    metadata:
+      labels:
+        app: blueberry-149
+    spec:
+      containers:
+        - name: blueberry-149
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-150
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-150
+  template:
+    metadata:
+      labels:
+        app: blueberry-150
+    spec:
+      containers:
+        - name: blueberry-150
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+
