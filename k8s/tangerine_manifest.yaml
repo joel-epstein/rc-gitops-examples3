@@ -1,0 +1,3600 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-1
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-1
+  template:
+    metadata:
+      labels:
+        app: tangerine-1
+    spec:
+      containers:
+        - name: tangerine-1
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-2
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-2
+  template:
+    metadata:
+      labels:
+        app: tangerine-2
+    spec:
+      containers:
+        - name: tangerine-2
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-3
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-3
+  template:
+    metadata:
+      labels:
+        app: tangerine-3
+    spec:
+      containers:
+        - name: tangerine-3
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-4
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-4
+  template:
+    metadata:
+      labels:
+        app: tangerine-4
+    spec:
+      containers:
+        - name: tangerine-4
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-5
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-5
+  template:
+    metadata:
+      labels:
+        app: tangerine-5
+    spec:
+      containers:
+        - name: tangerine-5
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-6
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-6
+  template:
+    metadata:
+      labels:
+        app: tangerine-6
+    spec:
+      containers:
+        - name: tangerine-6
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-7
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-7
+  template:
+    metadata:
+      labels:
+        app: tangerine-7
+    spec:
+      containers:
+        - name: tangerine-7
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-8
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-8
+  template:
+    metadata:
+      labels:
+        app: tangerine-8
+    spec:
+      containers:
+        - name: tangerine-8
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-9
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-9
+  template:
+    metadata:
+      labels:
+        app: tangerine-9
+    spec:
+      containers:
+        - name: tangerine-9
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-10
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-10
+  template:
+    metadata:
+      labels:
+        app: tangerine-10
+    spec:
+      containers:
+        - name: tangerine-10
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-11
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-11
+  template:
+    metadata:
+      labels:
+        app: tangerine-11
+    spec:
+      containers:
+        - name: tangerine-11
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-12
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-12
+  template:
+    metadata:
+      labels:
+        app: tangerine-12
+    spec:
+      containers:
+        - name: tangerine-12
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-13
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-13
+  template:
+    metadata:
+      labels:
+        app: tangerine-13
+    spec:
+      containers:
+        - name: tangerine-13
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-14
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-14
+  template:
+    metadata:
+      labels:
+        app: tangerine-14
+    spec:
+      containers:
+        - name: tangerine-14
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-15
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-15
+  template:
+    metadata:
+      labels:
+        app: tangerine-15
+    spec:
+      containers:
+        - name: tangerine-15
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-16
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-16
+  template:
+    metadata:
+      labels:
+        app: tangerine-16
+    spec:
+      containers:
+        - name: tangerine-16
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-17
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-17
+  template:
+    metadata:
+      labels:
+        app: tangerine-17
+    spec:
+      containers:
+        - name: tangerine-17
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-18
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-18
+  template:
+    metadata:
+      labels:
+        app: tangerine-18
+    spec:
+      containers:
+        - name: tangerine-18
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-19
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-19
+  template:
+    metadata:
+      labels:
+        app: tangerine-19
+    spec:
+      containers:
+        - name: tangerine-19
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-20
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-20
+  template:
+    metadata:
+      labels:
+        app: tangerine-20
+    spec:
+      containers:
+        - name: tangerine-20
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-21
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-21
+  template:
+    metadata:
+      labels:
+        app: tangerine-21
+    spec:
+      containers:
+        - name: tangerine-21
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-22
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-22
+  template:
+    metadata:
+      labels:
+        app: tangerine-22
+    spec:
+      containers:
+        - name: tangerine-22
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-23
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-23
+  template:
+    metadata:
+      labels:
+        app: tangerine-23
+    spec:
+      containers:
+        - name: tangerine-23
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-24
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-24
+  template:
+    metadata:
+      labels:
+        app: tangerine-24
+    spec:
+      containers:
+        - name: tangerine-24
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-25
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-25
+  template:
+    metadata:
+      labels:
+        app: tangerine-25
+    spec:
+      containers:
+        - name: tangerine-25
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-26
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-26
+  template:
+    metadata:
+      labels:
+        app: tangerine-26
+    spec:
+      containers:
+        - name: tangerine-26
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-27
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-27
+  template:
+    metadata:
+      labels:
+        app: tangerine-27
+    spec:
+      containers:
+        - name: tangerine-27
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-28
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-28
+  template:
+    metadata:
+      labels:
+        app: tangerine-28
+    spec:
+      containers:
+        - name: tangerine-28
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-29
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-29
+  template:
+    metadata:
+      labels:
+        app: tangerine-29
+    spec:
+      containers:
+        - name: tangerine-29
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-30
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-30
+  template:
+    metadata:
+      labels:
+        app: tangerine-30
+    spec:
+      containers:
+        - name: tangerine-30
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-31
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-31
+  template:
+    metadata:
+      labels:
+        app: tangerine-31
+    spec:
+      containers:
+        - name: tangerine-31
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-32
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-32
+  template:
+    metadata:
+      labels:
+        app: tangerine-32
+    spec:
+      containers:
+        - name: tangerine-32
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-33
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-33
+  template:
+    metadata:
+      labels:
+        app: tangerine-33
+    spec:
+      containers:
+        - name: tangerine-33
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-34
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-34
+  template:
+    metadata:
+      labels:
+        app: tangerine-34
+    spec:
+      containers:
+        - name: tangerine-34
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-35
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-35
+  template:
+    metadata:
+      labels:
+        app: tangerine-35
+    spec:
+      containers:
+        - name: tangerine-35
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-36
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-36
+  template:
+    metadata:
+      labels:
+        app: tangerine-36
+    spec:
+      containers:
+        - name: tangerine-36
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-37
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-37
+  template:
+    metadata:
+      labels:
+        app: tangerine-37
+    spec:
+      containers:
+        - name: tangerine-37
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-38
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-38
+  template:
+    metadata:
+      labels:
+        app: tangerine-38
+    spec:
+      containers:
+        - name: tangerine-38
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-39
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-39
+  template:
+    metadata:
+      labels:
+        app: tangerine-39
+    spec:
+      containers:
+        - name: tangerine-39
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-40
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-40
+  template:
+    metadata:
+      labels:
+        app: tangerine-40
+    spec:
+      containers:
+        - name: tangerine-40
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-41
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-41
+  template:
+    metadata:
+      labels:
+        app: tangerine-41
+    spec:
+      containers:
+        - name: tangerine-41
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-42
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-42
+  template:
+    metadata:
+      labels:
+        app: tangerine-42
+    spec:
+      containers:
+        - name: tangerine-42
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-43
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-43
+  template:
+    metadata:
+      labels:
+        app: tangerine-43
+    spec:
+      containers:
+        - name: tangerine-43
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-44
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-44
+  template:
+    metadata:
+      labels:
+        app: tangerine-44
+    spec:
+      containers:
+        - name: tangerine-44
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-45
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-45
+  template:
+    metadata:
+      labels:
+        app: tangerine-45
+    spec:
+      containers:
+        - name: tangerine-45
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-46
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-46
+  template:
+    metadata:
+      labels:
+        app: tangerine-46
+    spec:
+      containers:
+        - name: tangerine-46
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-47
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-47
+  template:
+    metadata:
+      labels:
+        app: tangerine-47
+    spec:
+      containers:
+        - name: tangerine-47
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-48
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-48
+  template:
+    metadata:
+      labels:
+        app: tangerine-48
+    spec:
+      containers:
+        - name: tangerine-48
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-49
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-49
+  template:
+    metadata:
+      labels:
+        app: tangerine-49
+    spec:
+      containers:
+        - name: tangerine-49
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-50
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-50
+  template:
+    metadata:
+      labels:
+        app: tangerine-50
+    spec:
+      containers:
+        - name: tangerine-50
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-51
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-51
+  template:
+    metadata:
+      labels:
+        app: tangerine-51
+    spec:
+      containers:
+        - name: tangerine-51
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-52
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-52
+  template:
+    metadata:
+      labels:
+        app: tangerine-52
+    spec:
+      containers:
+        - name: tangerine-52
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-53
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-53
+  template:
+    metadata:
+      labels:
+        app: tangerine-53
+    spec:
+      containers:
+        - name: tangerine-53
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-54
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-54
+  template:
+    metadata:
+      labels:
+        app: tangerine-54
+    spec:
+      containers:
+        - name: tangerine-54
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-55
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-55
+  template:
+    metadata:
+      labels:
+        app: tangerine-55
+    spec:
+      containers:
+        - name: tangerine-55
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-56
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-56
+  template:
+    metadata:
+      labels:
+        app: tangerine-56
+    spec:
+      containers:
+        - name: tangerine-56
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-57
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-57
+  template:
+    metadata:
+      labels:
+        app: tangerine-57
+    spec:
+      containers:
+        - name: tangerine-57
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-58
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-58
+  template:
+    metadata:
+      labels:
+        app: tangerine-58
+    spec:
+      containers:
+        - name: tangerine-58
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-59
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-59
+  template:
+    metadata:
+      labels:
+        app: tangerine-59
+    spec:
+      containers:
+        - name: tangerine-59
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-60
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-60
+  template:
+    metadata:
+      labels:
+        app: tangerine-60
+    spec:
+      containers:
+        - name: tangerine-60
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-61
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-61
+  template:
+    metadata:
+      labels:
+        app: tangerine-61
+    spec:
+      containers:
+        - name: tangerine-61
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-62
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-62
+  template:
+    metadata:
+      labels:
+        app: tangerine-62
+    spec:
+      containers:
+        - name: tangerine-62
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-63
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-63
+  template:
+    metadata:
+      labels:
+        app: tangerine-63
+    spec:
+      containers:
+        - name: tangerine-63
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-64
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-64
+  template:
+    metadata:
+      labels:
+        app: tangerine-64
+    spec:
+      containers:
+        - name: tangerine-64
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-65
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-65
+  template:
+    metadata:
+      labels:
+        app: tangerine-65
+    spec:
+      containers:
+        - name: tangerine-65
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-66
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-66
+  template:
+    metadata:
+      labels:
+        app: tangerine-66
+    spec:
+      containers:
+        - name: tangerine-66
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-67
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-67
+  template:
+    metadata:
+      labels:
+        app: tangerine-67
+    spec:
+      containers:
+        - name: tangerine-67
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-68
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-68
+  template:
+    metadata:
+      labels:
+        app: tangerine-68
+    spec:
+      containers:
+        - name: tangerine-68
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-69
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-69
+  template:
+    metadata:
+      labels:
+        app: tangerine-69
+    spec:
+      containers:
+        - name: tangerine-69
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-70
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-70
+  template:
+    metadata:
+      labels:
+        app: tangerine-70
+    spec:
+      containers:
+        - name: tangerine-70
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-71
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-71
+  template:
+    metadata:
+      labels:
+        app: tangerine-71
+    spec:
+      containers:
+        - name: tangerine-71
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-72
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-72
+  template:
+    metadata:
+      labels:
+        app: tangerine-72
+    spec:
+      containers:
+        - name: tangerine-72
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-73
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-73
+  template:
+    metadata:
+      labels:
+        app: tangerine-73
+    spec:
+      containers:
+        - name: tangerine-73
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-74
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-74
+  template:
+    metadata:
+      labels:
+        app: tangerine-74
+    spec:
+      containers:
+        - name: tangerine-74
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-75
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-75
+  template:
+    metadata:
+      labels:
+        app: tangerine-75
+    spec:
+      containers:
+        - name: tangerine-75
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-76
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-76
+  template:
+    metadata:
+      labels:
+        app: tangerine-76
+    spec:
+      containers:
+        - name: tangerine-76
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-77
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-77
+  template:
+    metadata:
+      labels:
+        app: tangerine-77
+    spec:
+      containers:
+        - name: tangerine-77
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-78
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-78
+  template:
+    metadata:
+      labels:
+        app: tangerine-78
+    spec:
+      containers:
+        - name: tangerine-78
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-79
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-79
+  template:
+    metadata:
+      labels:
+        app: tangerine-79
+    spec:
+      containers:
+        - name: tangerine-79
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-80
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-80
+  template:
+    metadata:
+      labels:
+        app: tangerine-80
+    spec:
+      containers:
+        - name: tangerine-80
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-81
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-81
+  template:
+    metadata:
+      labels:
+        app: tangerine-81
+    spec:
+      containers:
+        - name: tangerine-81
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-82
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-82
+  template:
+    metadata:
+      labels:
+        app: tangerine-82
+    spec:
+      containers:
+        - name: tangerine-82
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-83
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-83
+  template:
+    metadata:
+      labels:
+        app: tangerine-83
+    spec:
+      containers:
+        - name: tangerine-83
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-84
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-84
+  template:
+    metadata:
+      labels:
+        app: tangerine-84
+    spec:
+      containers:
+        - name: tangerine-84
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-85
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-85
+  template:
+    metadata:
+      labels:
+        app: tangerine-85
+    spec:
+      containers:
+        - name: tangerine-85
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-86
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-86
+  template:
+    metadata:
+      labels:
+        app: tangerine-86
+    spec:
+      containers:
+        - name: tangerine-86
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-87
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-87
+  template:
+    metadata:
+      labels:
+        app: tangerine-87
+    spec:
+      containers:
+        - name: tangerine-87
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-88
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-88
+  template:
+    metadata:
+      labels:
+        app: tangerine-88
+    spec:
+      containers:
+        - name: tangerine-88
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-89
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-89
+  template:
+    metadata:
+      labels:
+        app: tangerine-89
+    spec:
+      containers:
+        - name: tangerine-89
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-90
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-90
+  template:
+    metadata:
+      labels:
+        app: tangerine-90
+    spec:
+      containers:
+        - name: tangerine-90
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-91
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-91
+  template:
+    metadata:
+      labels:
+        app: tangerine-91
+    spec:
+      containers:
+        - name: tangerine-91
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-92
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-92
+  template:
+    metadata:
+      labels:
+        app: tangerine-92
+    spec:
+      containers:
+        - name: tangerine-92
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-93
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-93
+  template:
+    metadata:
+      labels:
+        app: tangerine-93
+    spec:
+      containers:
+        - name: tangerine-93
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-94
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-94
+  template:
+    metadata:
+      labels:
+        app: tangerine-94
+    spec:
+      containers:
+        - name: tangerine-94
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-95
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-95
+  template:
+    metadata:
+      labels:
+        app: tangerine-95
+    spec:
+      containers:
+        - name: tangerine-95
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-96
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-96
+  template:
+    metadata:
+      labels:
+        app: tangerine-96
+    spec:
+      containers:
+        - name: tangerine-96
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-97
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-97
+  template:
+    metadata:
+      labels:
+        app: tangerine-97
+    spec:
+      containers:
+        - name: tangerine-97
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-98
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-98
+  template:
+    metadata:
+      labels:
+        app: tangerine-98
+    spec:
+      containers:
+        - name: tangerine-98
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-99
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-99
+  template:
+    metadata:
+      labels:
+        app: tangerine-99
+    spec:
+      containers:
+        - name: tangerine-99
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-100
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-100
+  template:
+    metadata:
+      labels:
+        app: tangerine-100
+    spec:
+      containers:
+        - name: tangerine-100
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-101
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-101
+  template:
+    metadata:
+      labels:
+        app: tangerine-101
+    spec:
+      containers:
+        - name: tangerine-101
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-102
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-102
+  template:
+    metadata:
+      labels:
+        app: tangerine-102
+    spec:
+      containers:
+        - name: tangerine-102
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-103
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-103
+  template:
+    metadata:
+      labels:
+        app: tangerine-103
+    spec:
+      containers:
+        - name: tangerine-103
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-104
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-104
+  template:
+    metadata:
+      labels:
+        app: tangerine-104
+    spec:
+      containers:
+        - name: tangerine-104
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-105
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-105
+  template:
+    metadata:
+      labels:
+        app: tangerine-105
+    spec:
+      containers:
+        - name: tangerine-105
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-106
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-106
+  template:
+    metadata:
+      labels:
+        app: tangerine-106
+    spec:
+      containers:
+        - name: tangerine-106
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-107
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-107
+  template:
+    metadata:
+      labels:
+        app: tangerine-107
+    spec:
+      containers:
+        - name: tangerine-107
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-108
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-108
+  template:
+    metadata:
+      labels:
+        app: tangerine-108
+    spec:
+      containers:
+        - name: tangerine-108
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-109
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-109
+  template:
+    metadata:
+      labels:
+        app: tangerine-109
+    spec:
+      containers:
+        - name: tangerine-109
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-110
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-110
+  template:
+    metadata:
+      labels:
+        app: tangerine-110
+    spec:
+      containers:
+        - name: tangerine-110
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-111
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-111
+  template:
+    metadata:
+      labels:
+        app: tangerine-111
+    spec:
+      containers:
+        - name: tangerine-111
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-112
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-112
+  template:
+    metadata:
+      labels:
+        app: tangerine-112
+    spec:
+      containers:
+        - name: tangerine-112
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-113
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-113
+  template:
+    metadata:
+      labels:
+        app: tangerine-113
+    spec:
+      containers:
+        - name: tangerine-113
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-114
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-114
+  template:
+    metadata:
+      labels:
+        app: tangerine-114
+    spec:
+      containers:
+        - name: tangerine-114
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-115
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-115
+  template:
+    metadata:
+      labels:
+        app: tangerine-115
+    spec:
+      containers:
+        - name: tangerine-115
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-116
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-116
+  template:
+    metadata:
+      labels:
+        app: tangerine-116
+    spec:
+      containers:
+        - name: tangerine-116
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-117
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-117
+  template:
+    metadata:
+      labels:
+        app: tangerine-117
+    spec:
+      containers:
+        - name: tangerine-117
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-118
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-118
+  template:
+    metadata:
+      labels:
+        app: tangerine-118
+    spec:
+      containers:
+        - name: tangerine-118
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-119
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-119
+  template:
+    metadata:
+      labels:
+        app: tangerine-119
+    spec:
+      containers:
+        - name: tangerine-119
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-120
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-120
+  template:
+    metadata:
+      labels:
+        app: tangerine-120
+    spec:
+      containers:
+        - name: tangerine-120
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-121
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-121
+  template:
+    metadata:
+      labels:
+        app: tangerine-121
+    spec:
+      containers:
+        - name: tangerine-121
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-122
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-122
+  template:
+    metadata:
+      labels:
+        app: tangerine-122
+    spec:
+      containers:
+        - name: tangerine-122
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-123
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-123
+  template:
+    metadata:
+      labels:
+        app: tangerine-123
+    spec:
+      containers:
+        - name: tangerine-123
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-124
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-124
+  template:
+    metadata:
+      labels:
+        app: tangerine-124
+    spec:
+      containers:
+        - name: tangerine-124
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-125
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-125
+  template:
+    metadata:
+      labels:
+        app: tangerine-125
+    spec:
+      containers:
+        - name: tangerine-125
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-126
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-126
+  template:
+    metadata:
+      labels:
+        app: tangerine-126
+    spec:
+      containers:
+        - name: tangerine-126
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-127
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-127
+  template:
+    metadata:
+      labels:
+        app: tangerine-127
+    spec:
+      containers:
+        - name: tangerine-127
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-128
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-128
+  template:
+    metadata:
+      labels:
+        app: tangerine-128
+    spec:
+      containers:
+        - name: tangerine-128
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-129
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-129
+  template:
+    metadata:
+      labels:
+        app: tangerine-129
+    spec:
+      containers:
+        - name: tangerine-129
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-130
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-130
+  template:
+    metadata:
+      labels:
+        app: tangerine-130
+    spec:
+      containers:
+        - name: tangerine-130
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-131
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-131
+  template:
+    metadata:
+      labels:
+        app: tangerine-131
+    spec:
+      containers:
+        - name: tangerine-131
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-132
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-132
+  template:
+    metadata:
+      labels:
+        app: tangerine-132
+    spec:
+      containers:
+        - name: tangerine-132
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-133
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-133
+  template:
+    metadata:
+      labels:
+        app: tangerine-133
+    spec:
+      containers:
+        - name: tangerine-133
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-134
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-134
+  template:
+    metadata:
+      labels:
+        app: tangerine-134
+    spec:
+      containers:
+        - name: tangerine-134
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-135
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-135
+  template:
+    metadata:
+      labels:
+        app: tangerine-135
+    spec:
+      containers:
+        - name: tangerine-135
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-136
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-136
+  template:
+    metadata:
+      labels:
+        app: tangerine-136
+    spec:
+      containers:
+        - name: tangerine-136
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-137
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-137
+  template:
+    metadata:
+      labels:
+        app: tangerine-137
+    spec:
+      containers:
+        - name: tangerine-137
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-138
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-138
+  template:
+    metadata:
+      labels:
+        app: tangerine-138
+    spec:
+      containers:
+        - name: tangerine-138
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-139
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-139
+  template:
+    metadata:
+      labels:
+        app: tangerine-139
+    spec:
+      containers:
+        - name: tangerine-139
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-140
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-140
+  template:
+    metadata:
+      labels:
+        app: tangerine-140
+    spec:
+      containers:
+        - name: tangerine-140
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-141
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-141
+  template:
+    metadata:
+      labels:
+        app: tangerine-141
+    spec:
+      containers:
+        - name: tangerine-141
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-142
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-142
+  template:
+    metadata:
+      labels:
+        app: tangerine-142
+    spec:
+      containers:
+        - name: tangerine-142
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-143
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-143
+  template:
+    metadata:
+      labels:
+        app: tangerine-143
+    spec:
+      containers:
+        - name: tangerine-143
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-144
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-144
+  template:
+    metadata:
+      labels:
+        app: tangerine-144
+    spec:
+      containers:
+        - name: tangerine-144
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-145
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-145
+  template:
+    metadata:
+      labels:
+        app: tangerine-145
+    spec:
+      containers:
+        - name: tangerine-145
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-146
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-146
+  template:
+    metadata:
+      labels:
+        app: tangerine-146
+    spec:
+      containers:
+        - name: tangerine-146
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-147
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-147
+  template:
+    metadata:
+      labels:
+        app: tangerine-147
+    spec:
+      containers:
+        - name: tangerine-147
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-148
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-148
+  template:
+    metadata:
+      labels:
+        app: tangerine-148
+    spec:
+      containers:
+        - name: tangerine-148
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-149
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-149
+  template:
+    metadata:
+      labels:
+        app: tangerine-149
+    spec:
+      containers:
+        - name: tangerine-149
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-150
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-150
+  template:
+    metadata:
+      labels:
+        app: tangerine-150
+    spec:
+      containers:
+        - name: tangerine-150
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+
