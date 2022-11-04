@@ -1,0 +1,3600 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-1
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-1
+  template:
+    metadata:
+      labels:
+        app: grape-1
+    spec:
+      containers:
+        - name: grape-1
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-2
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-2
+  template:
+    metadata:
+      labels:
+        app: grape-2
+    spec:
+      containers:
+        - name: grape-2
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-3
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-3
+  template:
+    metadata:
+      labels:
+        app: grape-3
+    spec:
+      containers:
+        - name: grape-3
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-4
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-4
+  template:
+    metadata:
+      labels:
+        app: grape-4
+    spec:
+      containers:
+        - name: grape-4
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-5
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-5
+  template:
+    metadata:
+      labels:
+        app: grape-5
+    spec:
+      containers:
+        - name: grape-5
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-6
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-6
+  template:
+    metadata:
+      labels:
+        app: grape-6
+    spec:
+      containers:
+        - name: grape-6
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-7
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-7
+  template:
+    metadata:
+      labels:
+        app: grape-7
+    spec:
+      containers:
+        - name: grape-7
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-8
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-8
+  template:
+    metadata:
+      labels:
+        app: grape-8
+    spec:
+      containers:
+        - name: grape-8
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-9
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-9
+  template:
+    metadata:
+      labels:
+        app: grape-9
+    spec:
+      containers:
+        - name: grape-9
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-10
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-10
+  template:
+    metadata:
+      labels:
+        app: grape-10
+    spec:
+      containers:
+        - name: grape-10
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-11
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-11
+  template:
+    metadata:
+      labels:
+        app: grape-11
+    spec:
+      containers:
+        - name: grape-11
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-12
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-12
+  template:
+    metadata:
+      labels:
+        app: grape-12
+    spec:
+      containers:
+        - name: grape-12
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-13
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-13
+  template:
+    metadata:
+      labels:
+        app: grape-13
+    spec:
+      containers:
+        - name: grape-13
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-14
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-14
+  template:
+    metadata:
+      labels:
+        app: grape-14
+    spec:
+      containers:
+        - name: grape-14
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-15
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-15
+  template:
+    metadata:
+      labels:
+        app: grape-15
+    spec:
+      containers:
+        - name: grape-15
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-16
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-16
+  template:
+    metadata:
+      labels:
+        app: grape-16
+    spec:
+      containers:
+        - name: grape-16
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-17
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-17
+  template:
+    metadata:
+      labels:
+        app: grape-17
+    spec:
+      containers:
+        - name: grape-17
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-18
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-18
+  template:
+    metadata:
+      labels:
+        app: grape-18
+    spec:
+      containers:
+        - name: grape-18
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-19
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-19
+  template:
+    metadata:
+      labels:
+        app: grape-19
+    spec:
+      containers:
+        - name: grape-19
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-20
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-20
+  template:
+    metadata:
+      labels:
+        app: grape-20
+    spec:
+      containers:
+        - name: grape-20
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-21
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-21
+  template:
+    metadata:
+      labels:
+        app: grape-21
+    spec:
+      containers:
+        - name: grape-21
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-22
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-22
+  template:
+    metadata:
+      labels:
+        app: grape-22
+    spec:
+      containers:
+        - name: grape-22
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-23
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-23
+  template:
+    metadata:
+      labels:
+        app: grape-23
+    spec:
+      containers:
+        - name: grape-23
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-24
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-24
+  template:
+    metadata:
+      labels:
+        app: grape-24
+    spec:
+      containers:
+        - name: grape-24
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-25
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-25
+  template:
+    metadata:
+      labels:
+        app: grape-25
+    spec:
+      containers:
+        - name: grape-25
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-26
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-26
+  template:
+    metadata:
+      labels:
+        app: grape-26
+    spec:
+      containers:
+        - name: grape-26
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-27
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-27
+  template:
+    metadata:
+      labels:
+        app: grape-27
+    spec:
+      containers:
+        - name: grape-27
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-28
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-28
+  template:
+    metadata:
+      labels:
+        app: grape-28
+    spec:
+      containers:
+        - name: grape-28
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-29
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-29
+  template:
+    metadata:
+      labels:
+        app: grape-29
+    spec:
+      containers:
+        - name: grape-29
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-30
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-30
+  template:
+    metadata:
+      labels:
+        app: grape-30
+    spec:
+      containers:
+        - name: grape-30
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-31
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-31
+  template:
+    metadata:
+      labels:
+        app: grape-31
+    spec:
+      containers:
+        - name: grape-31
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-32
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-32
+  template:
+    metadata:
+      labels:
+        app: grape-32
+    spec:
+      containers:
+        - name: grape-32
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-33
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-33
+  template:
+    metadata:
+      labels:
+        app: grape-33
+    spec:
+      containers:
+        - name: grape-33
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-34
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-34
+  template:
+    metadata:
+      labels:
+        app: grape-34
+    spec:
+      containers:
+        - name: grape-34
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-35
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-35
+  template:
+    metadata:
+      labels:
+        app: grape-35
+    spec:
+      containers:
+        - name: grape-35
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-36
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-36
+  template:
+    metadata:
+      labels:
+        app: grape-36
+    spec:
+      containers:
+        - name: grape-36
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-37
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-37
+  template:
+    metadata:
+      labels:
+        app: grape-37
+    spec:
+      containers:
+        - name: grape-37
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-38
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-38
+  template:
+    metadata:
+      labels:
+        app: grape-38
+    spec:
+      containers:
+        - name: grape-38
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-39
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-39
+  template:
+    metadata:
+      labels:
+        app: grape-39
+    spec:
+      containers:
+        - name: grape-39
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-40
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-40
+  template:
+    metadata:
+      labels:
+        app: grape-40
+    spec:
+      containers:
+        - name: grape-40
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-41
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-41
+  template:
+    metadata:
+      labels:
+        app: grape-41
+    spec:
+      containers:
+        - name: grape-41
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-42
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-42
+  template:
+    metadata:
+      labels:
+        app: grape-42
+    spec:
+      containers:
+        - name: grape-42
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-43
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-43
+  template:
+    metadata:
+      labels:
+        app: grape-43
+    spec:
+      containers:
+        - name: grape-43
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-44
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-44
+  template:
+    metadata:
+      labels:
+        app: grape-44
+    spec:
+      containers:
+        - name: grape-44
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-45
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-45
+  template:
+    metadata:
+      labels:
+        app: grape-45
+    spec:
+      containers:
+        - name: grape-45
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-46
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-46
+  template:
+    metadata:
+      labels:
+        app: grape-46
+    spec:
+      containers:
+        - name: grape-46
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-47
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-47
+  template:
+    metadata:
+      labels:
+        app: grape-47
+    spec:
+      containers:
+        - name: grape-47
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-48
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-48
+  template:
+    metadata:
+      labels:
+        app: grape-48
+    spec:
+      containers:
+        - name: grape-48
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-49
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-49
+  template:
+    metadata:
+      labels:
+        app: grape-49
+    spec:
+      containers:
+        - name: grape-49
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-50
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-50
+  template:
+    metadata:
+      labels:
+        app: grape-50
+    spec:
+      containers:
+        - name: grape-50
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-51
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-51
+  template:
+    metadata:
+      labels:
+        app: grape-51
+    spec:
+      containers:
+        - name: grape-51
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-52
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-52
+  template:
+    metadata:
+      labels:
+        app: grape-52
+    spec:
+      containers:
+        - name: grape-52
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-53
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-53
+  template:
+    metadata:
+      labels:
+        app: grape-53
+    spec:
+      containers:
+        - name: grape-53
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-54
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-54
+  template:
+    metadata:
+      labels:
+        app: grape-54
+    spec:
+      containers:
+        - name: grape-54
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-55
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-55
+  template:
+    metadata:
+      labels:
+        app: grape-55
+    spec:
+      containers:
+        - name: grape-55
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-56
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-56
+  template:
+    metadata:
+      labels:
+        app: grape-56
+    spec:
+      containers:
+        - name: grape-56
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-57
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-57
+  template:
+    metadata:
+      labels:
+        app: grape-57
+    spec:
+      containers:
+        - name: grape-57
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-58
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-58
+  template:
+    metadata:
+      labels:
+        app: grape-58
+    spec:
+      containers:
+        - name: grape-58
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-59
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-59
+  template:
+    metadata:
+      labels:
+        app: grape-59
+    spec:
+      containers:
+        - name: grape-59
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-60
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-60
+  template:
+    metadata:
+      labels:
+        app: grape-60
+    spec:
+      containers:
+        - name: grape-60
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-61
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-61
+  template:
+    metadata:
+      labels:
+        app: grape-61
+    spec:
+      containers:
+        - name: grape-61
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-62
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-62
+  template:
+    metadata:
+      labels:
+        app: grape-62
+    spec:
+      containers:
+        - name: grape-62
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-63
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-63
+  template:
+    metadata:
+      labels:
+        app: grape-63
+    spec:
+      containers:
+        - name: grape-63
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-64
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-64
+  template:
+    metadata:
+      labels:
+        app: grape-64
+    spec:
+      containers:
+        - name: grape-64
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-65
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-65
+  template:
+    metadata:
+      labels:
+        app: grape-65
+    spec:
+      containers:
+        - name: grape-65
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-66
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-66
+  template:
+    metadata:
+      labels:
+        app: grape-66
+    spec:
+      containers:
+        - name: grape-66
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-67
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-67
+  template:
+    metadata:
+      labels:
+        app: grape-67
+    spec:
+      containers:
+        - name: grape-67
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-68
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-68
+  template:
+    metadata:
+      labels:
+        app: grape-68
+    spec:
+      containers:
+        - name: grape-68
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-69
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-69
+  template:
+    metadata:
+      labels:
+        app: grape-69
+    spec:
+      containers:
+        - name: grape-69
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-70
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-70
+  template:
+    metadata:
+      labels:
+        app: grape-70
+    spec:
+      containers:
+        - name: grape-70
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-71
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-71
+  template:
+    metadata:
+      labels:
+        app: grape-71
+    spec:
+      containers:
+        - name: grape-71
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-72
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-72
+  template:
+    metadata:
+      labels:
+        app: grape-72
+    spec:
+      containers:
+        - name: grape-72
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-73
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-73
+  template:
+    metadata:
+      labels:
+        app: grape-73
+    spec:
+      containers:
+        - name: grape-73
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-74
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-74
+  template:
+    metadata:
+      labels:
+        app: grape-74
+    spec:
+      containers:
+        - name: grape-74
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-75
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-75
+  template:
+    metadata:
+      labels:
+        app: grape-75
+    spec:
+      containers:
+        - name: grape-75
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-76
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-76
+  template:
+    metadata:
+      labels:
+        app: grape-76
+    spec:
+      containers:
+        - name: grape-76
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-77
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-77
+  template:
+    metadata:
+      labels:
+        app: grape-77
+    spec:
+      containers:
+        - name: grape-77
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-78
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-78
+  template:
+    metadata:
+      labels:
+        app: grape-78
+    spec:
+      containers:
+        - name: grape-78
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-79
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-79
+  template:
+    metadata:
+      labels:
+        app: grape-79
+    spec:
+      containers:
+        - name: grape-79
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-80
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-80
+  template:
+    metadata:
+      labels:
+        app: grape-80
+    spec:
+      containers:
+        - name: grape-80
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-81
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-81
+  template:
+    metadata:
+      labels:
+        app: grape-81
+    spec:
+      containers:
+        - name: grape-81
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-82
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-82
+  template:
+    metadata:
+      labels:
+        app: grape-82
+    spec:
+      containers:
+        - name: grape-82
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-83
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-83
+  template:
+    metadata:
+      labels:
+        app: grape-83
+    spec:
+      containers:
+        - name: grape-83
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-84
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-84
+  template:
+    metadata:
+      labels:
+        app: grape-84
+    spec:
+      containers:
+        - name: grape-84
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-85
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-85
+  template:
+    metadata:
+      labels:
+        app: grape-85
+    spec:
+      containers:
+        - name: grape-85
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-86
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-86
+  template:
+    metadata:
+      labels:
+        app: grape-86
+    spec:
+      containers:
+        - name: grape-86
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-87
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-87
+  template:
+    metadata:
+      labels:
+        app: grape-87
+    spec:
+      containers:
+        - name: grape-87
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-88
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-88
+  template:
+    metadata:
+      labels:
+        app: grape-88
+    spec:
+      containers:
+        - name: grape-88
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-89
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-89
+  template:
+    metadata:
+      labels:
+        app: grape-89
+    spec:
+      containers:
+        - name: grape-89
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-90
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-90
+  template:
+    metadata:
+      labels:
+        app: grape-90
+    spec:
+      containers:
+        - name: grape-90
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-91
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-91
+  template:
+    metadata:
+      labels:
+        app: grape-91
+    spec:
+      containers:
+        - name: grape-91
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-92
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-92
+  template:
+    metadata:
+      labels:
+        app: grape-92
+    spec:
+      containers:
+        - name: grape-92
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-93
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-93
+  template:
+    metadata:
+      labels:
+        app: grape-93
+    spec:
+      containers:
+        - name: grape-93
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-94
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-94
+  template:
+    metadata:
+      labels:
+        app: grape-94
+    spec:
+      containers:
+        - name: grape-94
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-95
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-95
+  template:
+    metadata:
+      labels:
+        app: grape-95
+    spec:
+      containers:
+        - name: grape-95
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-96
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-96
+  template:
+    metadata:
+      labels:
+        app: grape-96
+    spec:
+      containers:
+        - name: grape-96
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-97
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-97
+  template:
+    metadata:
+      labels:
+        app: grape-97
+    spec:
+      containers:
+        - name: grape-97
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-98
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-98
+  template:
+    metadata:
+      labels:
+        app: grape-98
+    spec:
+      containers:
+        - name: grape-98
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-99
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-99
+  template:
+    metadata:
+      labels:
+        app: grape-99
+    spec:
+      containers:
+        - name: grape-99
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-100
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-100
+  template:
+    metadata:
+      labels:
+        app: grape-100
+    spec:
+      containers:
+        - name: grape-100
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-101
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-101
+  template:
+    metadata:
+      labels:
+        app: grape-101
+    spec:
+      containers:
+        - name: grape-101
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-102
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-102
+  template:
+    metadata:
+      labels:
+        app: grape-102
+    spec:
+      containers:
+        - name: grape-102
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-103
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-103
+  template:
+    metadata:
+      labels:
+        app: grape-103
+    spec:
+      containers:
+        - name: grape-103
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-104
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-104
+  template:
+    metadata:
+      labels:
+        app: grape-104
+    spec:
+      containers:
+        - name: grape-104
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-105
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-105
+  template:
+    metadata:
+      labels:
+        app: grape-105
+    spec:
+      containers:
+        - name: grape-105
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-106
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-106
+  template:
+    metadata:
+      labels:
+        app: grape-106
+    spec:
+      containers:
+        - name: grape-106
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-107
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-107
+  template:
+    metadata:
+      labels:
+        app: grape-107
+    spec:
+      containers:
+        - name: grape-107
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-108
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-108
+  template:
+    metadata:
+      labels:
+        app: grape-108
+    spec:
+      containers:
+        - name: grape-108
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-109
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-109
+  template:
+    metadata:
+      labels:
+        app: grape-109
+    spec:
+      containers:
+        - name: grape-109
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-110
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-110
+  template:
+    metadata:
+      labels:
+        app: grape-110
+    spec:
+      containers:
+        - name: grape-110
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-111
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-111
+  template:
+    metadata:
+      labels:
+        app: grape-111
+    spec:
+      containers:
+        - name: grape-111
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-112
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-112
+  template:
+    metadata:
+      labels:
+        app: grape-112
+    spec:
+      containers:
+        - name: grape-112
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-113
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-113
+  template:
+    metadata:
+      labels:
+        app: grape-113
+    spec:
+      containers:
+        - name: grape-113
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-114
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-114
+  template:
+    metadata:
+      labels:
+        app: grape-114
+    spec:
+      containers:
+        - name: grape-114
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-115
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-115
+  template:
+    metadata:
+      labels:
+        app: grape-115
+    spec:
+      containers:
+        - name: grape-115
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-116
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-116
+  template:
+    metadata:
+      labels:
+        app: grape-116
+    spec:
+      containers:
+        - name: grape-116
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-117
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-117
+  template:
+    metadata:
+      labels:
+        app: grape-117
+    spec:
+      containers:
+        - name: grape-117
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-118
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-118
+  template:
+    metadata:
+      labels:
+        app: grape-118
+    spec:
+      containers:
+        - name: grape-118
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-119
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-119
+  template:
+    metadata:
+      labels:
+        app: grape-119
+    spec:
+      containers:
+        - name: grape-119
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-120
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-120
+  template:
+    metadata:
+      labels:
+        app: grape-120
+    spec:
+      containers:
+        - name: grape-120
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-121
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-121
+  template:
+    metadata:
+      labels:
+        app: grape-121
+    spec:
+      containers:
+        - name: grape-121
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-122
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-122
+  template:
+    metadata:
+      labels:
+        app: grape-122
+    spec:
+      containers:
+        - name: grape-122
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-123
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-123
+  template:
+    metadata:
+      labels:
+        app: grape-123
+    spec:
+      containers:
+        - name: grape-123
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-124
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-124
+  template:
+    metadata:
+      labels:
+        app: grape-124
+    spec:
+      containers:
+        - name: grape-124
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-125
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-125
+  template:
+    metadata:
+      labels:
+        app: grape-125
+    spec:
+      containers:
+        - name: grape-125
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-126
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-126
+  template:
+    metadata:
+      labels:
+        app: grape-126
+    spec:
+      containers:
+        - name: grape-126
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-127
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-127
+  template:
+    metadata:
+      labels:
+        app: grape-127
+    spec:
+      containers:
+        - name: grape-127
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-128
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-128
+  template:
+    metadata:
+      labels:
+        app: grape-128
+    spec:
+      containers:
+        - name: grape-128
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-129
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-129
+  template:
+    metadata:
+      labels:
+        app: grape-129
+    spec:
+      containers:
+        - name: grape-129
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-130
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-130
+  template:
+    metadata:
+      labels:
+        app: grape-130
+    spec:
+      containers:
+        - name: grape-130
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-131
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-131
+  template:
+    metadata:
+      labels:
+        app: grape-131
+    spec:
+      containers:
+        - name: grape-131
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-132
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-132
+  template:
+    metadata:
+      labels:
+        app: grape-132
+    spec:
+      containers:
+        - name: grape-132
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-133
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-133
+  template:
+    metadata:
+      labels:
+        app: grape-133
+    spec:
+      containers:
+        - name: grape-133
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-134
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-134
+  template:
+    metadata:
+      labels:
+        app: grape-134
+    spec:
+      containers:
+        - name: grape-134
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-135
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-135
+  template:
+    metadata:
+      labels:
+        app: grape-135
+    spec:
+      containers:
+        - name: grape-135
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-136
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-136
+  template:
+    metadata:
+      labels:
+        app: grape-136
+    spec:
+      containers:
+        - name: grape-136
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-137
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-137
+  template:
+    metadata:
+      labels:
+        app: grape-137
+    spec:
+      containers:
+        - name: grape-137
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-138
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-138
+  template:
+    metadata:
+      labels:
+        app: grape-138
+    spec:
+      containers:
+        - name: grape-138
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-139
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-139
+  template:
+    metadata:
+      labels:
+        app: grape-139
+    spec:
+      containers:
+        - name: grape-139
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-140
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-140
+  template:
+    metadata:
+      labels:
+        app: grape-140
+    spec:
+      containers:
+        - name: grape-140
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-141
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-141
+  template:
+    metadata:
+      labels:
+        app: grape-141
+    spec:
+      containers:
+        - name: grape-141
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-142
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-142
+  template:
+    metadata:
+      labels:
+        app: grape-142
+    spec:
+      containers:
+        - name: grape-142
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-143
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-143
+  template:
+    metadata:
+      labels:
+        app: grape-143
+    spec:
+      containers:
+        - name: grape-143
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-144
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-144
+  template:
+    metadata:
+      labels:
+        app: grape-144
+    spec:
+      containers:
+        - name: grape-144
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-145
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-145
+  template:
+    metadata:
+      labels:
+        app: grape-145
+    spec:
+      containers:
+        - name: grape-145
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-146
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-146
+  template:
+    metadata:
+      labels:
+        app: grape-146
+    spec:
+      containers:
+        - name: grape-146
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-147
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-147
+  template:
+    metadata:
+      labels:
+        app: grape-147
+    spec:
+      containers:
+        - name: grape-147
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-148
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-148
+  template:
+    metadata:
+      labels:
+        app: grape-148
+    spec:
+      containers:
+        - name: grape-148
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-149
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-149
+  template:
+    metadata:
+      labels:
+        app: grape-149
+    spec:
+      containers:
+        - name: grape-149
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grape-150
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: grape-150
+  template:
+    metadata:
+      labels:
+        app: grape-150
+    spec:
+      containers:
+        - name: grape-150
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+
