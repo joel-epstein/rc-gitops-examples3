@@ -232,7 +232,7 @@ _sync_template: {
 			namespace: _namespace
 		}
 		data: {
-			GREYMATTER_GIT_REMOTE: "git@github.com:joel-epstein/rc-gitops-examples2.git"
+			GREYMATTER_GIT_REMOTE: "git@github.com:joel-epstein/rc-gitops-examples3.git"
 		}
 	}]
 }
