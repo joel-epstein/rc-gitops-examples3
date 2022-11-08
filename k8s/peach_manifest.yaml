@@ -1,0 +1,2500 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-1
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-1
+  template:
+    metadata:
+      labels:
+        app: peach-1
+    spec:
+      containers:
+        - name: peach-1
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-2
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-2
+  template:
+    metadata:
+      labels:
+        app: peach-2
+    spec:
+      containers:
+        - name: peach-2
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-3
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-3
+  template:
+    metadata:
+      labels:
+        app: peach-3
+    spec:
+      containers:
+        - name: peach-3
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-4
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-4
+  template:
+    metadata:
+      labels:
+        app: peach-4
+    spec:
+      containers:
+        - name: peach-4
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-5
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-5
+  template:
+    metadata:
+      labels:
+        app: peach-5
+    spec:
+      containers:
+        - name: peach-5
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-6
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-6
+  template:
+    metadata:
+      labels:
+        app: peach-6
+    spec:
+      containers:
+        - name: peach-6
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-7
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-7
+  template:
+    metadata:
+      labels:
+        app: peach-7
+    spec:
+      containers:
+        - name: peach-7
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-8
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-8
+  template:
+    metadata:
+      labels:
+        app: peach-8
+    spec:
+      containers:
+        - name: peach-8
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-9
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-9
+  template:
+    metadata:
+      labels:
+        app: peach-9
+    spec:
+      containers:
+        - name: peach-9
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-10
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-10
+  template:
+    metadata:
+      labels:
+        app: peach-10
+    spec:
+      containers:
+        - name: peach-10
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-11
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-11
+  template:
+    metadata:
+      labels:
+        app: peach-11
+    spec:
+      containers:
+        - name: peach-11
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-12
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-12
+  template:
+    metadata:
+      labels:
+        app: peach-12
+    spec:
+      containers:
+        - name: peach-12
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-13
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-13
+  template:
+    metadata:
+      labels:
+        app: peach-13
+    spec:
+      containers:
+        - name: peach-13
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-14
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-14
+  template:
+    metadata:
+      labels:
+        app: peach-14
+    spec:
+      containers:
+        - name: peach-14
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-15
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-15
+  template:
+    metadata:
+      labels:
+        app: peach-15
+    spec:
+      containers:
+        - name: peach-15
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-16
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-16
+  template:
+    metadata:
+      labels:
+        app: peach-16
+    spec:
+      containers:
+        - name: peach-16
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-17
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-17
+  template:
+    metadata:
+      labels:
+        app: peach-17
+    spec:
+      containers:
+        - name: peach-17
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-18
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-18
+  template:
+    metadata:
+      labels:
+        app: peach-18
+    spec:
+      containers:
+        - name: peach-18
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-19
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-19
+  template:
+    metadata:
+      labels:
+        app: peach-19
+    spec:
+      containers:
+        - name: peach-19
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-20
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-20
+  template:
+    metadata:
+      labels:
+        app: peach-20
+    spec:
+      containers:
+        - name: peach-20
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-21
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-21
+  template:
+    metadata:
+      labels:
+        app: peach-21
+    spec:
+      containers:
+        - name: peach-21
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-22
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-22
+  template:
+    metadata:
+      labels:
+        app: peach-22
+    spec:
+      containers:
+        - name: peach-22
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-23
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-23
+  template:
+    metadata:
+      labels:
+        app: peach-23
+    spec:
+      containers:
+        - name: peach-23
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-24
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-24
+  template:
+    metadata:
+      labels:
+        app: peach-24
+    spec:
+      containers:
+        - name: peach-24
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-25
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-25
+  template:
+    metadata:
+      labels:
+        app: peach-25
+    spec:
+      containers:
+        - name: peach-25
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-26
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-26
+  template:
+    metadata:
+      labels:
+        app: peach-26
+    spec:
+      containers:
+        - name: peach-26
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-27
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-27
+  template:
+    metadata:
+      labels:
+        app: peach-27
+    spec:
+      containers:
+        - name: peach-27
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-28
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-28
+  template:
+    metadata:
+      labels:
+        app: peach-28
+    spec:
+      containers:
+        - name: peach-28
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-29
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-29
+  template:
+    metadata:
+      labels:
+        app: peach-29
+    spec:
+      containers:
+        - name: peach-29
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-30
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-30
+  template:
+    metadata:
+      labels:
+        app: peach-30
+    spec:
+      containers:
+        - name: peach-30
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-31
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-31
+  template:
+    metadata:
+      labels:
+        app: peach-31
+    spec:
+      containers:
+        - name: peach-31
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-32
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-32
+  template:
+    metadata:
+      labels:
+        app: peach-32
+    spec:
+      containers:
+        - name: peach-32
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-33
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-33
+  template:
+    metadata:
+      labels:
+        app: peach-33
+    spec:
+      containers:
+        - name: peach-33
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-34
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-34
+  template:
+    metadata:
+      labels:
+        app: peach-34
+    spec:
+      containers:
+        - name: peach-34
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-35
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-35
+  template:
+    metadata:
+      labels:
+        app: peach-35
+    spec:
+      containers:
+        - name: peach-35
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-36
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-36
+  template:
+    metadata:
+      labels:
+        app: peach-36
+    spec:
+      containers:
+        - name: peach-36
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-37
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-37
+  template:
+    metadata:
+      labels:
+        app: peach-37
+    spec:
+      containers:
+        - name: peach-37
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-38
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-38
+  template:
+    metadata:
+      labels:
+        app: peach-38
+    spec:
+      containers:
+        - name: peach-38
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-39
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-39
+  template:
+    metadata:
+      labels:
+        app: peach-39
+    spec:
+      containers:
+        - name: peach-39
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-40
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-40
+  template:
+    metadata:
+      labels:
+        app: peach-40
+    spec:
+      containers:
+        - name: peach-40
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-41
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-41
+  template:
+    metadata:
+      labels:
+        app: peach-41
+    spec:
+      containers:
+        - name: peach-41
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-42
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-42
+  template:
+    metadata:
+      labels:
+        app: peach-42
+    spec:
+      containers:
+        - name: peach-42
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-43
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-43
+  template:
+    metadata:
+      labels:
+        app: peach-43
+    spec:
+      containers:
+        - name: peach-43
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-44
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-44
+  template:
+    metadata:
+      labels:
+        app: peach-44
+    spec:
+      containers:
+        - name: peach-44
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-45
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-45
+  template:
+    metadata:
+      labels:
+        app: peach-45
+    spec:
+      containers:
+        - name: peach-45
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-46
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-46
+  template:
+    metadata:
+      labels:
+        app: peach-46
+    spec:
+      containers:
+        - name: peach-46
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-47
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-47
+  template:
+    metadata:
+      labels:
+        app: peach-47
+    spec:
+      containers:
+        - name: peach-47
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-48
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-48
+  template:
+    metadata:
+      labels:
+        app: peach-48
+    spec:
+      containers:
+        - name: peach-48
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-49
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-49
+  template:
+    metadata:
+      labels:
+        app: peach-49
+    spec:
+      containers:
+        - name: peach-49
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-50
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-50
+  template:
+    metadata:
+      labels:
+        app: peach-50
+    spec:
+      containers:
+        - name: peach-50
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-51
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-51
+  template:
+    metadata:
+      labels:
+        app: peach-51
+    spec:
+      containers:
+        - name: peach-51
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-52
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-52
+  template:
+    metadata:
+      labels:
+        app: peach-52
+    spec:
+      containers:
+        - name: peach-52
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-53
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-53
+  template:
+    metadata:
+      labels:
+        app: peach-53
+    spec:
+      containers:
+        - name: peach-53
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-54
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-54
+  template:
+    metadata:
+      labels:
+        app: peach-54
+    spec:
+      containers:
+        - name: peach-54
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-55
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-55
+  template:
+    metadata:
+      labels:
+        app: peach-55
+    spec:
+      containers:
+        - name: peach-55
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-56
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-56
+  template:
+    metadata:
+      labels:
+        app: peach-56
+    spec:
+      containers:
+        - name: peach-56
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-57
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-57
+  template:
+    metadata:
+      labels:
+        app: peach-57
+    spec:
+      containers:
+        - name: peach-57
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-58
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-58
+  template:
+    metadata:
+      labels:
+        app: peach-58
+    spec:
+      containers:
+        - name: peach-58
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-59
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-59
+  template:
+    metadata:
+      labels:
+        app: peach-59
+    spec:
+      containers:
+        - name: peach-59
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-60
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-60
+  template:
+    metadata:
+      labels:
+        app: peach-60
+    spec:
+      containers:
+        - name: peach-60
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-61
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-61
+  template:
+    metadata:
+      labels:
+        app: peach-61
+    spec:
+      containers:
+        - name: peach-61
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-62
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-62
+  template:
+    metadata:
+      labels:
+        app: peach-62
+    spec:
+      containers:
+        - name: peach-62
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-63
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-63
+  template:
+    metadata:
+      labels:
+        app: peach-63
+    spec:
+      containers:
+        - name: peach-63
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-64
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-64
+  template:
+    metadata:
+      labels:
+        app: peach-64
+    spec:
+      containers:
+        - name: peach-64
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-65
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-65
+  template:
+    metadata:
+      labels:
+        app: peach-65
+    spec:
+      containers:
+        - name: peach-65
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-66
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-66
+  template:
+    metadata:
+      labels:
+        app: peach-66
+    spec:
+      containers:
+        - name: peach-66
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-67
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-67
+  template:
+    metadata:
+      labels:
+        app: peach-67
+    spec:
+      containers:
+        - name: peach-67
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-68
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-68
+  template:
+    metadata:
+      labels:
+        app: peach-68
+    spec:
+      containers:
+        - name: peach-68
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-69
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-69
+  template:
+    metadata:
+      labels:
+        app: peach-69
+    spec:
+      containers:
+        - name: peach-69
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-70
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-70
+  template:
+    metadata:
+      labels:
+        app: peach-70
+    spec:
+      containers:
+        - name: peach-70
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-71
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-71
+  template:
+    metadata:
+      labels:
+        app: peach-71
+    spec:
+      containers:
+        - name: peach-71
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-72
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-72
+  template:
+    metadata:
+      labels:
+        app: peach-72
+    spec:
+      containers:
+        - name: peach-72
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-73
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-73
+  template:
+    metadata:
+      labels:
+        app: peach-73
+    spec:
+      containers:
+        - name: peach-73
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-74
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-74
+  template:
+    metadata:
+      labels:
+        app: peach-74
+    spec:
+      containers:
+        - name: peach-74
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-75
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-75
+  template:
+    metadata:
+      labels:
+        app: peach-75
+    spec:
+      containers:
+        - name: peach-75
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-76
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-76
+  template:
+    metadata:
+      labels:
+        app: peach-76
+    spec:
+      containers:
+        - name: peach-76
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-77
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-77
+  template:
+    metadata:
+      labels:
+        app: peach-77
+    spec:
+      containers:
+        - name: peach-77
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-78
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-78
+  template:
+    metadata:
+      labels:
+        app: peach-78
+    spec:
+      containers:
+        - name: peach-78
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-79
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-79
+  template:
+    metadata:
+      labels:
+        app: peach-79
+    spec:
+      containers:
+        - name: peach-79
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-80
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-80
+  template:
+    metadata:
+      labels:
+        app: peach-80
+    spec:
+      containers:
+        - name: peach-80
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-81
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-81
+  template:
+    metadata:
+      labels:
+        app: peach-81
+    spec:
+      containers:
+        - name: peach-81
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-82
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-82
+  template:
+    metadata:
+      labels:
+        app: peach-82
+    spec:
+      containers:
+        - name: peach-82
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-83
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-83
+  template:
+    metadata:
+      labels:
+        app: peach-83
+    spec:
+      containers:
+        - name: peach-83
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-84
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-84
+  template:
+    metadata:
+      labels:
+        app: peach-84
+    spec:
+      containers:
+        - name: peach-84
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-85
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-85
+  template:
+    metadata:
+      labels:
+        app: peach-85
+    spec:
+      containers:
+        - name: peach-85
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-86
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-86
+  template:
+    metadata:
+      labels:
+        app: peach-86
+    spec:
+      containers:
+        - name: peach-86
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-87
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-87
+  template:
+    metadata:
+      labels:
+        app: peach-87
+    spec:
+      containers:
+        - name: peach-87
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-88
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-88
+  template:
+    metadata:
+      labels:
+        app: peach-88
+    spec:
+      containers:
+        - name: peach-88
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-89
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-89
+  template:
+    metadata:
+      labels:
+        app: peach-89
+    spec:
+      containers:
+        - name: peach-89
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-90
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-90
+  template:
+    metadata:
+      labels:
+        app: peach-90
+    spec:
+      containers:
+        - name: peach-90
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-91
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-91
+  template:
+    metadata:
+      labels:
+        app: peach-91
+    spec:
+      containers:
+        - name: peach-91
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-92
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-92
+  template:
+    metadata:
+      labels:
+        app: peach-92
+    spec:
+      containers:
+        - name: peach-92
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-93
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-93
+  template:
+    metadata:
+      labels:
+        app: peach-93
+    spec:
+      containers:
+        - name: peach-93
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-94
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-94
+  template:
+    metadata:
+      labels:
+        app: peach-94
+    spec:
+      containers:
+        - name: peach-94
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-95
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-95
+  template:
+    metadata:
+      labels:
+        app: peach-95
+    spec:
+      containers:
+        - name: peach-95
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-96
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-96
+  template:
+    metadata:
+      labels:
+        app: peach-96
+    spec:
+      containers:
+        - name: peach-96
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-97
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-97
+  template:
+    metadata:
+      labels:
+        app: peach-97
+    spec:
+      containers:
+        - name: peach-97
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-98
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-98
+  template:
+    metadata:
+      labels:
+        app: peach-98
+    spec:
+      containers:
+        - name: peach-98
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-99
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-99
+  template:
+    metadata:
+      labels:
+        app: peach-99
+    spec:
+      containers:
+        - name: peach-99
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-100
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: peach-100
+  template:
+    metadata:
+      labels:
+        app: peach-100
+    spec:
+      containers:
+        - name: peach-100
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+

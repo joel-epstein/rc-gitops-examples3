@@ -2,28 +2,28 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: edge-grocerylist3
-  namespace: foobar-3
+  name: edge-grocerylist2
+  namespace: foobar-2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      greymatter.io/cluster: edge_grocerylist3
+      greymatter.io/cluster: edge_grocerylist2
   template:
     metadata:
       labels:
-        greymatter.io/cluster: edge_grocerylist3
+        greymatter.io/cluster: edge_grocerylist2
     spec:
       containers:
         - name: sidecar
           image: quay.io/greymatterio/gm-proxy:1.7.1
           imagePullPolicy: Always
           ports:
-          - containerPort: 10811
+          - containerPort: 10810
             name: proxy
           env:
             - name: XDS_CLUSTER
-              value: edge_grocerylist3
+              value: edge_grocerylist2
             - name: ENVOY_ADMIN_LOG_PATH
               value: /dev/stdout
             - name: PROXY_DYNAMIC
@@ -47,15 +47,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: edge-grocerylist3
-  namespace: foobar-3
+  name: edge-grocerylist
+  namespace: foobar-2
 spec:
   ports:
   - name: ingress
-    port: 10811
+    port: 10810
     protocol: TCP
-    targetPort: 10811
+    targetPort: 10810
   selector:
-    greymatter.io/cluster: edge_grocerylist3
+    greymatter.io/cluster: edge_grocerylist2
   type: LoadBalancer
 

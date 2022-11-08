@@ -2,7 +2,6 @@ package grocerylist
 
 config: {
 	spire: bool | *false @tag(spire,type=bool) // enable Spire-based mTLS
-	operator_namespace: string | *"gm-operator" @tag(operator_namespace, type=string)
 }
 
 mesh: {
@@ -16,16 +15,16 @@ defaults: {
 
 	ports: {
 		default_ingress: 10808
-		edge_ingress:    10811
+		edge_ingress:    10810
 		redis_ingress:   10910
 		metrics:         8081
 	}
 
-	// greymatter.io edge_grocerylist input configurations.
+	// greymatter.io edge_grocerylist2 input configurations.
 	// These configs will manipulate the behavior of accessing your services
 	// from the outside world.
 	edge: {
-		key:        "edge_grocerylist3"
+		key:        "edge_grocerylist2"
 		
 		enable_tls: false
 
@@ -37,7 +36,7 @@ defaults: {
 		// - different environments/infra may require different config.
 		// This can be retrieved on kubernetes by running:
 		// kubectl get svc edge-grocerylist -n $MY_NAMESPACE
-		endpoint: "af9bfa2c31fb74d69883556694bcc216-2078969349.us-east-1.elb.amazonaws.com:10811"
+		endpoint: "ac8b24f85ef4645e4bd36e796e2a57a8-478306398.us-east-1.elb.amazonaws.com:10810"
 		
 		// OIDC block
 		oidc: {
@@ -70,17 +69,4 @@ defaults: {
 			}
 		}
 	}
-	spire: {
-		// Namespace of the Spire server
-		namespace: "spire"
-		// Trust domain must match what's configured at the server
-		trust_domain: "greymatter.io"
-		// The mount path of the spire socket for communication with the agent
-		socket_mount_path: "/run/spire/socket"
-		// When config.deploy_spire=true, we inject a secret. This sets the name of that secret
-		ca_secret_name: "server-ca"
-		// should we request a host mount for the socket, or normal volume mount? If true, also requests hostPID permission
-		host_mount_socket: true
-	}
-
 }

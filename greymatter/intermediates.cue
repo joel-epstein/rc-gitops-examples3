@@ -502,7 +502,7 @@ import (
 	_force_https:             bool | *false
 	_spire_self:              string // can specify current identity - defaults to "edge"
 	_spire_other:             string // can specify an allowable upstream identity - defaults to "edge"
-	_enable_circuit_breakers: bool | *true
+	_enable_circuit_breakers: bool | *false
 	// We can expand options here for load balancers that superseed the lb_policy field
 	_load_balancer: "round_robin" | "least_request" | "maglev" | "ring_hash" | "random"
 	_trust_file: string | *"/etc/proxy/tls/sidecar/ca.crt"
@@ -571,11 +571,11 @@ import (
 // Setting _enable_circuit_breakers: true on the #cluster will use these values
 // unless overriden.
 #circuit_breakers_default: {
-	max_connections:      int64 | *4096
-	max_pending_requests: int64 | *4096
-	max_requests:         int64 | *4096
+	max_connections:      int64 | *512
+	max_pending_requests: int64 | *512
+	max_requests:         int64 | *512
 	max_retries:          int64 | *2
-	max_connection_pools: int64 | *4096
+	max_connection_pools: int64 | *512
 	track_remaining:      bool | *false
 }
 

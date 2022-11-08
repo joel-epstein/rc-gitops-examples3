@@ -4,7 +4,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata: 
   name: greymatter-sync
-  namespace: foobar-3 
+  namespace: foobar-2 
 spec:
   selector:
     matchLabels:
@@ -35,7 +35,7 @@ spec:
           "sync", 
           "--ssh-private-key", "/var/lib/greymatter/.ssh/ssh-private-key", 
           "--git", "--forever", 
-          "--branch", "foobar-3",
+          "--branch", "foobar-2",
           "--interval", "10s", 
           "--git-dir", "/var/lib/greymatter/checkout", 
           "-e", "configs",
@@ -69,7 +69,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: greymatter-sync-config
-  namespace: foobar-3 
+  namespace: foobar-2 
 data:
   # property-like keys; each key maps to a simple value
   GREYMATTER_GIT_REMOTE: "git@github.com:joel-epstein/rc-gitops-examples3.git"
