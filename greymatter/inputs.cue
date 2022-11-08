@@ -16,7 +16,7 @@ defaults: {
 
 	ports: {
 		default_ingress: 10808
-		edge_ingress:    10811
+		edge_ingress:    10809
 		redis_ingress:   10910
 		metrics:         8081
 	}
@@ -25,7 +25,7 @@ defaults: {
 	// These configs will manipulate the behavior of accessing your services
 	// from the outside world.
 	edge: {
-		key:        "edge_grocerylist3"
+		key:        "edge_grocerylist1"
 		
 		enable_tls: false
 
@@ -37,7 +37,7 @@ defaults: {
 		// - different environments/infra may require different config.
 		// This can be retrieved on kubernetes by running:
 		// kubectl get svc edge-grocerylist -n $MY_NAMESPACE
-		endpoint: "af9bfa2c31fb74d69883556694bcc216-2078969349.us-east-1.elb.amazonaws.com:10811"
+		endpoint: "a49b9d0afc56441718737bce1b58af68-504379397.us-east-1.elb.amazonaws.com:10809"
 		
 		// OIDC block
 		oidc: {
