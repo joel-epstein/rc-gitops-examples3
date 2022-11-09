@@ -31,7 +31,7 @@ Peach_90: {
 		// This can always remain localhost insecure since pods are
 		// closed off to the rest of the world. greymatter.io recommends
 		// you perform TLS termination at the sidecar level.
-		#cluster & {cluster_key: IngressName, _upstream_port: 3000},
+		#cluster & {cluster_key: IngressName, _upstream_port: 9090},
 		#route & {route_key:     IngressName},
 		
 
