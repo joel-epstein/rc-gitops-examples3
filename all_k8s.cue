@@ -173,7 +173,7 @@ _sync_template: {
 					}]
 					containers: [{
 						name:            "greymatter-sync"
-						image:           "quay.io/greymatterio/cli:4.4.0-rc.8"
+						image:           "greymatter.jfrog.io/release-oci/greymatter-cli:4.5.1-ubi8.6-2022-11-09"
 						imagePullPolicy: "Always"
 						command: ["/usr/local/bin/greymatter"]
 						args: [
@@ -268,7 +268,7 @@ _manifests_template: {
 					]
 					containers: [{
 						name:            "sidecar"
-						image:           "quay.io/greymatterio/gm-proxy:daniel"
+						image:           "greymatter.jfrog.io/release-oci/greymatter-proxy:1.7.5-ubi8.6-2022-11-09"
 						imagePullPolicy: "Always"
 						ports: [{
 							containerPort: _port
