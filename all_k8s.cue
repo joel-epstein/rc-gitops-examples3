@@ -68,7 +68,7 @@ _fruit_template: {
 				]
 				containers: [{
 					name:  _name
-					image: "quay.io/greymatterio/fake-service:v0.24.2"
+					image: "greymatter.jfrog.io/internal-oci/fake-service:v0.24.2"
 					env: [
 						{name: "ERROR_RATE", value: "0.1"},
 						{name: "ERROR_CODE", value: "501"},
@@ -125,7 +125,7 @@ _vegeta_template: {
 				}]
 				containers: [{
 					name: "vegeta"
-					image: "quay.io/greymatterio/vegeta:latest"
+					image: "greymatter.jfrog.io/internal-oci/vegeta:latest"
 					env: [
 						{name: "TARGET_FQDN", value: "edge-grocerylist\(_num).\(_namespace).svc.cluster.local:\(_port)"},
 						{name: "TARGET_OBJECT", value: _namespace2fruit[_namespace]},

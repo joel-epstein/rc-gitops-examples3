@@ -24,7 +24,7 @@ _fruit_template: {
 			metadata: labels: app: _name
 			spec: containers: [{
 				name:  _name
-				image: "quay.io/greymatterio/fake-service:v0.24.2"
+				image: "greymatter.jfrog.io/internal-oci/fake-service:v0.24.2"
         env: [
           {name: "ERROR_RATE", value: "0.1"},
           {name: "ERROR_CODE", value: "501"},
