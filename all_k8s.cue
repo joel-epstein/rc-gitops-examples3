@@ -173,7 +173,7 @@ _sync_template: {
 					}]
 					containers: [{
 						name:            "greymatter-sync"
-						image:           "greymatter.jfrog.io/release-oci/greymatter-cli:4.5.1-ubi8.6-2022-11-09"
+						image:           "greymatter.jfrog.io/release-oci/greymatter-cli:4.5.1-ubi8.6-2022-11-14"
 						imagePullPolicy: "Always"
 						command: ["/usr/local/bin/greymatter"]
 						args: [
