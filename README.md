@@ -5,7 +5,7 @@ A greymatter.io tenant GitOps repository using CUE! :rocket:
 
 ## Prerequisites
 
-* `greymatter` CLI v4.4+
+* `greymatter` CLI v4.5+
 * [CUE](https://cuelang.org/docs/install/)
 
 ## Getting Started
@@ -31,7 +31,7 @@ greymatter init --dir store --example grocerystore
 ### Creating a project scaffold
 
 `greymatter init` also supports creating an empty project. This includes an edge node,
-an inputs file, a greymatter.io sync manifest, and a prefetched greymattter.io v1.8 dependencies.
+a globals file, a greymatter.io sync manifest, and a prefetched greymattter.io v1.8 dependencies.
 Try running the following:
 ```
 greymatter init --dir project myproject
@@ -50,31 +50,14 @@ CUE schemas as well as other CUE fetched dependencies.
 will live in this folder regardless of the package.
 * `greymatter/core`: This directory hosts greymatter specific functionality such as edge nodes, bridges,
 and other various core features.
-* `./greymatter/inputs.cue`: A CUE file in `package grocerylist` that contains
+* `./greymatter/globals.cue`: A CUE file in `package globals` that contains
 defaults, overrides, and user generated values. This is the entry point to your configuration pipeline.
-* `./greymatter/intermediates.cue`: A CUE file in `package grocerylist` containing
-specialized greymatter CUE. This is not meant to be edited.
-* `EXPORTS.cue`: A file storing the final CUE keys to export. The fields must be
-structured as arrays of configs, so that the greymatter CLI can parse it.
 * `k8s`: A folder to host Kubernetes manifests.
 * `k8s/sync.yaml`: A stateful set deploying the greymatter sync service.
 * `TUTORIAL.md`: an introduction to CUE! :rocket:
 
 ## Exploring Config Outputs
 
-The `EXPORTS.cue` file renders your configurations you've defined in the
-`grocerylist` package. This includes all configuration in
-`greymatter/inputs.cue`,  and your final service configurations in
-`greymatter/core` + `greymatter/grocerylist`.
-
-You can evaluate the final output by running the following commands:
-```bash
-# evaluate all configurations
-cue eval -c EXPORTS.cue --out json -e configs
-
-# evaluate full output of EXPORTS.cue
-cue eval EXPORTS.cue
-```
 
 ## Applying Configs to a Mesh
 
@@ -115,7 +98,7 @@ project's edge node:
 kubectl get svc edge-grocerylist -n $MY_NAMESPACE
 ```
 
-Retrieve the hostname entry and port and populate the value in `greymatter/inputs.cue`: `defaults.edge.endpoint`.
+Retrieve the hostname entry and port and populate the value in `greymatter/globals.cue`: `defaults.edge.endpoint`.
 This will become the route that traffic will flow through to your services.
 
 Commit the change, push to your repo, and happy requesting!

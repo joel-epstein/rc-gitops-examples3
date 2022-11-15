@@ -4,7 +4,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata: 
   name: greymatter-sync
-  namespace: foobar-3 
+  namespace: foobar-11 
 spec:
   selector:
     matchLabels:
@@ -25,18 +25,17 @@ spec:
           secretName: greymatter-sync-secret
       containers:
       - name: greymatter-sync
-        image: quay.io/greymatterio/cli:4.4.0-rc.8
+        image: greymatter.jfrog.io/release-oci/greymatter-cli:4.5.1-ubi8.6-2022-11-14 
         imagePullPolicy: Always
         command: ["/usr/local/bin/greymatter"]
         args: [
-          "-c", "/etc/greymatter/config.toml", 
           "--api", "http://controlensemble.greymatter.svc.cluster.local:5555", 
           "--catalog", "http://catalog.greymatter.svc.cluster.local:8080", 
           "sync", 
           "--ssh-private-key", "/var/lib/greymatter/.ssh/ssh-private-key", 
           "--git", "--forever", 
-          "--branch", "foobar-3",
-          "--interval", "10s", 
+          "--branch", "foobar-11",
+          "--interval", "3s", 
           "--git-dir", "/var/lib/greymatter/checkout", 
           "-e", "configs",
           "--redis-addr", "greymatter-datastore.greymatter.svc.cluster.local:6379",
@@ -69,7 +68,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: greymatter-sync-config
-  namespace: foobar-3 
+  namespace: foobar-11 
 data:
   # property-like keys; each key maps to a simple value
   GREYMATTER_GIT_REMOTE: "git@github.com:joel-epstein/rc-gitops-examples3.git"
